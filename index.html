@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2775.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-CN"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html, body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.qr {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.qr img {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* 遮挡层 */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mask {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 70px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mask1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: move1 0.32s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mask2 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: move2 0.41s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mask3 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: move3 0.27s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mask4 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: move4 0.36s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes move1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0% <span class="Apple-converted-space">  </span>{ left: -80px;<span class="Apple-converted-space">  </span>top: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>25%<span class="Apple-converted-space">  </span>{ left: 180px;<span class="Apple-converted-space">  </span>top: 260px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50%<span class="Apple-converted-space">  </span>{ left: 420px;<span class="Apple-converted-space">  </span>top: 80px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>75%<span class="Apple-converted-space">  </span>{ left: 220px;<span class="Apple-converted-space">  </span>top: 400px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>100% { left: -80px;<span class="Apple-converted-space">  </span>top: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes move2 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0% <span class="Apple-converted-space">  </span>{ left: 420px; top: 350px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>25%<span class="Apple-converted-space">  </span>{ left: 250px; top: 100px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50%<span class="Apple-converted-space">  </span>{ left: 0px; <span class="Apple-converted-space">  </span>top: 300px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>75%<span class="Apple-converted-space">  </span>{ left: 300px; top: 0px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>100% { left: 420px; top: 350px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes move3 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0% <span class="Apple-converted-space">  </span>{ left: 100px; top: -100px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>25%<span class="Apple-converted-space">  </span>{ left: 350px; top: 100px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50%<span class="Apple-converted-space">  </span>{ left: 150px; top: 350px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>75%<span class="Apple-converted-space">  </span>{ left: -80px; top: 150px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>100% { left: 100px; top: -100px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes move4 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0% <span class="Apple-converted-space">  </span>{ left: 300px; top: 500px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>25%<span class="Apple-converted-space">  </span>{ left: 50px;<span class="Apple-converted-space">  </span>top: 300px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50%<span class="Apple-converted-space">  </span>{ left: 350px; top: 150px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>75%<span class="Apple-converted-space">  </span>{ left: 100px; top: -100px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>100% { left: 300px; top: 500px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qr"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="feishu-qr.png"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mask mask1"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mask mask2"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mask mask3"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mask mask4"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
