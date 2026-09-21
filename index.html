@@ -9,8 +9,10 @@
         padding: 0;
         width: 100%;
         height: 100%;
-        background: transparent !important;
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
+        background: transparent !important;
     }
 
     body {
@@ -32,70 +34,71 @@
         will-change: transform;
     }
 
-    .mask1 {
+    .mask1, .m1 {
         width: 55px;
-        height: 150px;
+        height: 170px;
         animation: move1 0.42s linear infinite;
     }
 
-    .mask2 {
+    .mask2, .m2 {
         width: 45px;
-        height: 120px;
+        height: 130px;
         animation: move2 0.34s linear infinite;
     }
 
-    .mask3 {
-        width: 50px;
-        height: 140px;
+    .mask3, .m3 {
+        width: 60px;
+        height: 150px;
         animation: move3 0.38s linear infinite;
     }
 
-    .mask4 {
+    .mask4, .m4 {
         width: 40px;
         height: 110px;
         animation: move4 0.30s linear infinite;
     }
 
     @keyframes move1 {
-        0%   { transform: translate(-100px, 10vh); }
-        25%  { transform: translate(30vw, 35vh); }
-        50%  { transform: translate(70vw, 10vh); }
-        75%  { transform: translate(35vw, 70vh); }
-        100% { transform: translate(-100px, 10vh); }
+        0%   { transform: translate(-100px, 50px); }
+        25%  { transform: translate(300px, 150px); }
+        50%  { transform: translate(600px, 50px); }
+        75%  { transform: translate(300px, 400px); }
+        100% { transform: translate(-100px, 50px); }
     }
 
     @keyframes move2 {
-        0%   { transform: translate(80vw, 70vh); }
-        25%  { transform: translate(55vw, 20vh); }
-        50%  { transform: translate(10vw, 65vh); }
-        75%  { transform: translate(65vw, 40vh); }
-        100% { transform: translate(80vw, 70vh); }
+        0%   { transform: translate(600px, 400px); }
+        25%  { transform: translate(350px, 100px); }
+        50%  { transform: translate(50px, 350px); }
+        75%  { transform: translate(400px, 250px); }
+        100% { transform: translate(600px, 400px); }
     }
 
     @keyframes move3 {
-        0%   { transform: translate(15vw, -150px); }
-        25%  { transform: translate(70vw, 20vh); }
-        50%  { transform: translate(30vw, 75vh); }
-        75%  { transform: translate(-100px, 35vh); }
-        100% { transform: translate(15vw, -150px); }
+        0%   { transform: translate(100px, -150px); }
+        25%  { transform: translate(450px, 100px); }
+        50%  { transform: translate(200px, 450px); }
+        75%  { transform: translate(-100px, 200px); }
+        100% { transform: translate(100px, -150px); }
     }
 
     @keyframes move4 {
-        0%   { transform: translate(70vw, 90vh); }
-        25%  { transform: translate(20vw, 60vh); }
-        50%  { transform: translate(75vw, 30vh); }
-        75%  { transform: translate(35vw, -100px); }
-        100% { transform: translate(70vw, 90vh); }
+        0%   { transform: translate(450px, 500px); }
+        25%  { transform: translate(100px, 300px); }
+        50%  { transform: translate(500px, 150px); }
+        75%  { transform: translate(200px, -100px); }
+        100% { transform: translate(450px, 500px); }
     }
 </style>
 </head>
 
 <body>
 <div class="overlay">
-    <div class="mask mask1"></div>
-    <div class="mask mask2"></div>
-    <div class="mask mask3"></div>
-    <div class="mask mask4"></div>
+    <div class="mask mask1 m1"></div>
+    <div class="mask mask2 m2"></div>
+    <div class="mask mask3 m3"></div>
+    <div class="mask mask4 m4"></div>
 </div>
 </body>
+
 </html>
